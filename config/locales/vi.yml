@@ -1,14 +1,14 @@
-en:
+vi:
   static_pages:
     home:
-      title: "Welcome to the Sample App"
+      title: "Chào mừng đến với Sample App"
       description:
-        This is the home page for the <a href="https://www.railstutorial.org/">
-        Ruby on Rails Tutorial</a>sample application.
-      sign_up: "Sign up now"
+        Đây là trang chủ của dự án mẫu sử dụng <a href="https://www.railstutorial.org/">
+        Ruby on Rails Tutorial</a>
+      sign_up: "Đăng ký ngay"
       label: "Home"
     about:
-      title: "About"
+      title: "Về chúng tôi"
       description:
         The <a href="https://www.railstutorial.org/"><em>Ruby on Rails
         Tutorial</em></a>, part of the
@@ -20,33 +20,34 @@ en:
         <a href="https://rubyonrails.org/">Ruby on Rails</a>.
         This is the sample app for the tutorial.
     contact:
-      title: "Contact"
+      title: "Liên hệ"
       description:
-        Contact the Ruby on Rails Tutorial about the sample app at the
+        Liên hệ với Rails Tutorial về dự án mẫu tại
         <a href="https://www.railstutorial.org/contact">contact page</a>.
     help:
-      title: "Help"
-      description: Get help on the Ruby on Rails Tutorial at the
+      title: "Trợ giúp"
+      description:
+        Nhận hỗ trợ về the Ruby on Rails Tutorial tại
         <a href="https://www.railstutorial.org/help">Rails Tutorial Help page</a>.
         To get help on this sample app, see the
-        <a href="https://www.railstutorial.org/book">
-        <em>Ruby on Rails Tutorial</em>book</a>
+        <a href="https://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em>
+        book</a>
   layouts:
     header:
       title: "Ruby on Rails Tutorial Sample App"
-      home: "Home"
-      help: "Help"
-      signIn: "Log in"
+      home: "Trang chủ"
+      help: "Hỗ trợ"
+      signIn: "Đăng nhập"
       app_name: "Sample App"
     footer:
       description: "@2023 Nguyen Tien Dat"
-      new: "News"
-      about: "About"
-      contact: "Contact"
+      new: "Tin tức"
+      about: "Về chúng tôi"
+      contact: "Liên hệ"
     application:
-      english: "English"
-      vietnamese: "Vietnamese"
+      english: "Tiếng Anh"
+      vietnamese: "Tiếng Việt"
   users:
     new:
-      label: "Sign up"
+      label: "Đăng ký"
       description: <p>Find me in app/views/users/new.html.erb</p>

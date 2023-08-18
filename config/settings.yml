@@ -1,3 +1,9 @@
-links:
-  news: "https://news.railstutorial.org/"
-  rails_homepage: "https://rubyonrails.org/"
+externals:
+  rails_news: "https://news.railstutorial.org/"
+  rails_home: "https://rubyonrails.org/"
+digits:
+  length_50: 50
+  length_255: 255
+  length_6: 6
+regexes:
+  email: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

@@ -49,4 +49,15 @@ en:
   users:
     new:
       label: "Sign up"
-      description: <p>Find me in app/views/users/new.html.erb</p>
+      user_name: "User name"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+      submit: "Create my account"
+    create:
+      success: "Welcome to Sample App"
+    show:
+      user_not_found: "User not found"
+  shared:
+    error_messages:
+      contains_error: "The form contains"
+      error: "error"

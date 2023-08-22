@@ -43,8 +43,13 @@ vi:
       title: "Ruby on Rails Tutorial Sample App"
       home: "Trang chủ"
       help: "Hỗ trợ"
-      signIn: "Đăng nhập"
+      sign_in: "Đăng nhập"
       app_name: "Sample App"
+      user: "Người dùng"
+      sign_out: "Đăng xuất"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
     footer:
       description: "@2023 Nguyen Tien Dat"
       new: "Tin tức"
@@ -68,3 +73,11 @@ vi:
     error_messages:
       contains_error: "Biểu mẫu gồm"
       error: "Lỗi"
+  sessions:
+    new:
+      login: "Đăng nhập"
+      password: "Mật khẩu"
+      new_user: "Người dùng mới?"
+      signup: "Đăng ký ngay!"
+    create:
+      invalid: "Kết hợp email/mật khẩu không hợp lệ"

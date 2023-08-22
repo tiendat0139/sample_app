@@ -36,8 +36,13 @@ en:
       title: "Ruby on Rails Tutorial Sample App"
       home: "Home"
       help: "Help"
-      signIn: "Log in"
+      sign_in: "Log in"
       app_name: "Sample App"
+      user: "Users"
+      sign_out: "Log out"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
     footer:
       description: "@2023 Nguyen Tien Dat"
       new: "News"
@@ -61,3 +66,11 @@ en:
     error_messages:
       contains_error: "The form contains"
       error: "error"
+  sessions:
+    new:
+      login: "Login"
+      password: "Password"
+      new_user: "New User?"
+      signup: "Sign up now!"
+    create:
+      invalid: "Invalid email/password combination"

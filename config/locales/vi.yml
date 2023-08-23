@@ -79,5 +79,6 @@ vi:
       password: "Mật khẩu"
       new_user: "Người dùng mới?"
       signup: "Đăng ký ngay!"
+      remember_me: "Ghi nhớ tôi trên thiết bị này"
     create:
       invalid: "Kết hợp email/mật khẩu không hợp lệ"

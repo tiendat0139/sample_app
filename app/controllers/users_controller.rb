@@ -1,8 +1,14 @@
 class UsersController < ApplicationController
-  def show
-    @user = User.find_by id: params[:id]
-    redirect_to root_path, danger: "User not found" if @user.nil?
+  before_action :set_user, except: %i(create index new)
+  before_action :logged_in_user, only: %i(index edit update destroy)
+  before_action :correct_user, only: %i(edit update)
+  before_action :admin_user, only: %i(destroy)
+
+  def index
+    @pagy, @users = pagy(User.all, items: Settings.digits.per_page_10)
   end
+
+  def show; end
 
   def new
     @user = User.new
@@ -20,9 +26,53 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit; end
+
+  def update
+    if @user.update(user_params)
+      flash[:success] = t(".success")
+      redirect_to @user
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+
+  def destroy
+    if @user.destroy
+      flash[:success] = t(".success")
+    else
+      flash[:danger] = t(".fail")
+    end
+    redirect_to users_path
+  end
+
   private
   def user_params
     params.require(:user).permit(:name, :email,
                                  :password, :password_confirmation)
+  end
+
+  def set_user
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    flash[:warning] = t(".user_not_found")
+    redirect_to root_path
+  end
+
+  def logged_in_user
+    return if logged_in?
+
+    store_location
+    flash[:danger] = t(".require_login")
+    redirect_to login_path, status: :see_other
+  end
+
+  def correct_user
+    redirect_to root_path, status: :see_other unless current_user? @user
+  end
+
+  def admin_user
+    redirect_to(root_path, status: :see_other) unless current_user.admin?
   end
 end

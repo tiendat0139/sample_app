@@ -73,6 +73,7 @@ vi:
       submit: "Tạo tài khoản"
     create:
       success: "Chào mừng đến với Sample App"
+      info: "Hãy kiểm tra email để kích hoạt tài khoản của bạn."
     edit:
       label: "Chỉnh sửa thông tin người dùng"
       submit: "Lưu thay đổi"
@@ -97,3 +98,13 @@ vi:
       remember_me: "Ghi nhớ tôi trên thiết bị này"
     create:
       invalid: "Kết hợp email/mật khẩu không hợp lệ"
+      not_activated: "Tài khoản chưa được kích hoạt. Hãy kiểm tra email để
+      kích hoạt tài khoản của bạn."
+  user_mailer:
+    account_activation:
+      subject: "Kích hoạt tài khoản"
+      app_name: "Sample App"
+      greeting: "Xin chào"
+      header: "Chào mừng bạn đến với Ứng dụng mẫu! Bấm vào liên kết bên dưới để
+      kích hoạt tài khoản của bạn"
+      activate: "Kích hoạt"

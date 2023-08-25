@@ -5,5 +5,6 @@ digits:
   length_50: 50
   length_255: 255
   length_6: 6
+  per_page_10: 10
 regexes:
   email: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

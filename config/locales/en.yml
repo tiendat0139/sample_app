@@ -52,16 +52,31 @@ en:
       english: "English"
       vietnamese: "Vietnamese"
   users:
-    new:
-      label: "Sign up"
+    user_not_found: "User not found"
+    require_login: "Please log in"
+    user:
+      confirm_delete: "You sure?"
+      delete: "Delete"
+    form:
       user_name: "User name"
       password: "Password"
       password_confirmation: "Password confirmation"
+    new:
+      label: "Sign up"
       submit: "Create my account"
     create:
       success: "Welcome to Sample App"
-    show:
-      user_not_found: "User not found"
+    edit:
+      label: "Update your profile"
+      submit: "Save changes"
+      change_avt: "Change"
+    update:
+      success: "Update successfully"
+    index:
+      label: "All users"
+    destroy:
+      success: "User deleted"
+      fail: "Delete fail"
   shared:
     error_messages:
       contains_error: "The form contains"

@@ -59,16 +59,31 @@ vi:
       english: "Tiếng Anh"
       vietnamese: "Tiếng Việt"
   users:
-    new:
-      label: "Đăng ký"
+    user_not_found: "Không tìm thấy người dùng"
+    require_login: "Hãy đăng nhập trước"
+    user:
+      confirm_delete: "Bạn có chắc chắn?"
+      delete: "Xóa"
+    form:
       user_name: "Tài khoản"
       password: "Mật khẩu"
       password_confirmation: "Nhập lại mật khẩu"
+    new:
+      label: "Đăng ký"
       submit: "Tạo tài khoản"
     create:
       success: "Chào mừng đến với Sample App"
-    show:
-      user_not_found: "Không tìm thấy người dùng"
+    edit:
+      label: "Chỉnh sửa thông tin người dùng"
+      submit: "Lưu thay đổi"
+      change_avt: "Thay đổi"
+    update:
+      success: "Cập nhật thành công"
+    index:
+      label: "Tất cả người dùng"
+    destroy:
+      success: "Đã xóa người dùng"
+      fail: "Xóa người dùng không thành công"
   shared:
     error_messages:
       contains_error: "Biểu mẫu gồm"

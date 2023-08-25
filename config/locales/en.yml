@@ -66,6 +66,7 @@ en:
       submit: "Create my account"
     create:
       success: "Welcome to Sample App"
+      info: "Please check your email to activate your account."
     edit:
       label: "Update your profile"
       submit: "Save changes"
@@ -90,3 +91,13 @@ en:
       remember_me: "Remember me on this computer"
     create:
       invalid: "Invalid email/password combination"
+      not_activated: "Account not activated. Please check your email to
+      activate your account."
+  user_mailer:
+    account_activation:
+      subject: "Account Activation"
+      app_name: "Sample App"
+      greeting: "Hi"
+      header: "Welcome to the Sample App! Click on the link below to activate
+      your account:"
+      activate: "Activate"

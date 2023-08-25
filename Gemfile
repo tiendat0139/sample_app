@@ -50,6 +50,7 @@ gem "sassc-rails", "2.1.2"
 # gem "image_processing", "~> 1.2"
 gem "config"
 gem "faker"
+gem "figaro"
 gem "pagy"
 gem "rails-i18n"
 group :development, :test do

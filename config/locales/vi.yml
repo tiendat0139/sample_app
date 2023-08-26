@@ -96,6 +96,7 @@ vi:
       new_user: "Người dùng mới?"
       signup: "Đăng ký ngay!"
       remember_me: "Ghi nhớ tôi trên thiết bị này"
+      forgot_password: "Quên mật khẩu?"
     create:
       invalid: "Kết hợp email/mật khẩu không hợp lệ"
       not_activated: "Tài khoản chưa được kích hoạt. Hãy kiểm tra email để
@@ -108,3 +109,27 @@ vi:
       header: "Chào mừng bạn đến với Ứng dụng mẫu! Bấm vào liên kết bên dưới để
       kích hoạt tài khoản của bạn"
       activate: "Kích hoạt"
+    password_reset:
+      subject: "Đặt lại mật khẩu"
+      header: "Đặt lại mật khẩu"
+      submit: "Đặt lại mật khẩu"
+      sub_header: "Để đặt lại mật khẩu của bạn hãy bấm vào liên kết bên dưới:"
+      expire_time: "Liên kết này sẽ hết hạn sau hai giờ."
+      footer: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua
+      email này và mật khẩu của bạn sẽ vẫn như cũ."
+  password_resets:
+    reset_expire: "Đặt lại mật khẩu đã hết hạn"
+    new:
+      label: "Quên mật khẩu"
+      submit: "Đặt lại mật khẩu"
+    create:
+      email_not_found: "Không tìm thấy địa chỉ email"
+      send_email: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+    update:
+      success: "Mật khẩu đã được đặt lại"
+      password_empty: "không được bỏ trống"
+      reset_success: "Mật khẩu đã được đặt lại."
+    edit:
+      label: "Đặt lại mật khẩu"
+      submit: "Cập nhật mật khẩu"
+      confirmation: "Xác nhận"

@@ -48,9 +48,11 @@ gem "sassc-rails", "2.1.2"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html]
 # gem "image_processing", "~> 1.2"
+gem "active_storage_validations", "0.9.8"
 gem "config"
 gem "faker"
 gem "figaro"
+gem "image_processing", "1.12.2"
 gem "pagy"
 gem "rails-i18n"
 group :development, :test do

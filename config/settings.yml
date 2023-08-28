@@ -5,6 +5,10 @@ digits:
   length_50: 50
   length_255: 255
   length_6: 6
+  length_140: 140
   per_page_10: 10
 regexes:
   email: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+microposts:
+  image_type: ["image/jpeg", "image/gif", "image/png"]
+  resize_to_limit: [500, 500]

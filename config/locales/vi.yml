@@ -5,6 +5,13 @@ vi:
         name: "Tài khoản"
         email: "Email"
         password: "Mật khẩu"
+      micropost:
+        image: "Ảnh"
+        content: "Nội dung"
+    errors:
+      messages:
+        invalid_image_type: "phải là định dạng hình ảnh hợp lệ"
+        limit_size: "phải nhỏ hơn 5 MB"
   static_pages:
     home:
       title: "Chào mừng đến với Sample App"
@@ -13,6 +20,7 @@ vi:
         Ruby on Rails Tutorial</a>
       sign_up: "Đăng ký ngay"
       label: "Home"
+      feed: "Bản tin"
     about:
       title: "Về chúng tôi"
       description:
@@ -85,10 +93,18 @@ vi:
     destroy:
       success: "Đã xóa người dùng"
       fail: "Xóa người dùng không thành công"
+    show:
+      microposts: "Bài đăng"
   shared:
     error_messages:
       contains_error: "Biểu mẫu gồm"
       error: "Lỗi"
+    user_info:
+      micropost: "bài viết"
+      view_my_profile: "Xem trang cá nhân"
+    micropost_form:
+      placeholder: "Tạo bài viết mới"
+      submit: "Đăng"
   sessions:
     new:
       login: "Đăng nhập"
@@ -112,7 +128,6 @@ vi:
     password_reset:
       subject: "Đặt lại mật khẩu"
       header: "Đặt lại mật khẩu"
-      submit: "Đặt lại mật khẩu"
       sub_header: "Để đặt lại mật khẩu của bạn hãy bấm vào liên kết bên dưới:"
       expire_time: "Liên kết này sẽ hết hạn sau hai giờ."
       footer: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua
@@ -133,3 +148,16 @@ vi:
       label: "Đặt lại mật khẩu"
       submit: "Cập nhật mật khẩu"
       confirmation: "Xác nhận"
+  microposts:
+    micropost:
+      posted: "Đã đăng"
+      ago: "trước"
+      delete: "xóa"
+      confirm_delete: "Bạn chắc chứ?"
+    destroy:
+      success: "Đã xóa bài viết"
+      fail: "Xóa bài viết không thành công"
+    create:
+      success: "Đã tạo bài viết"
+    image:
+      over_size: "Kích thước tệp tối đa là 5 MB. Vui lòng chọn tệp nhỏ hơn."

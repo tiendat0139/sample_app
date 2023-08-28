@@ -1,4 +1,9 @@
 en:
+  activerecord:
+    errors:
+      messages:
+        invalid_image_type: "must be a valid image format"
+        limit_size: "should be less than 5MB"
   static_pages:
     home:
       title: "Welcome to the Sample App"
@@ -7,6 +12,7 @@ en:
         Ruby on Rails Tutorial</a>sample application.
       sign_up: "Sign up now"
       label: "Home"
+      feed: "Micropost Feed"
     about:
       title: "About"
       description:
@@ -78,10 +84,18 @@ en:
     destroy:
       success: "User deleted"
       fail: "Delete fail"
+    show:
+      microposts: "Microposts"
   shared:
     error_messages:
       contains_error: "The form contains"
       error: "error"
+    user_info:
+      micropost: "micropost"
+      view_my_profile: "View my profile"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Submit"
   sessions:
     new:
       login: "Login"
@@ -105,7 +119,6 @@ en:
     password_reset:
       subject: "Password Reset"
       header: "Password Reset"
-      submit: "Reset password"
       sub_header: "To reset your password click the link below:"
       expire_time: "This link will expire in two hours."
       footer: "If you did not request your password to be reset, please ignore
@@ -126,3 +139,16 @@ en:
       label: "Reset password"
       submit: "Update password"
       confirmation: "Confirmation"
+  microposts:
+    micropost:
+      posted: "Posted"
+      ago: "ago"
+      delete: "delete"
+      confirm_delete: "You sure?"
+    destroy:
+      success: "Microposts deleted"
+      fail: "Delete failed"
+    create:
+      success: "Micropost created"
+    image:
+      over_size: "Maximum file size is 5MB. Please choose a smaller file."

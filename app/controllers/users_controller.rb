@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, except: %i(create index new)
-  before_action :logged_in_user, only: %i(index edit update destroy)
+  before_action :logged_in_user, only: %i(index edit update destroy
+                                          following followers)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
 
@@ -46,6 +47,22 @@ class UsersController < ApplicationController
       flash[:danger] = t(".fail")
     end
     redirect_to users_path
+  end
+
+  def following
+    @title = t(".title")
+    @user = User.find(params[:id])
+    @pagy, @users = pagy(@user.following,
+                         items: Settings.digits.per_page_10)
+    render :show_follow, status: :unprocessable_entity
+  end
+
+  def followers
+    @title = t(".title")
+    @user = User.find(params[:id])
+    @pagy, @users = pagy(@user.followers,
+                         items: Settings.digits.per_page_10)
+    render :show_follow, status: :unprocessable_entity
   end
 
   private

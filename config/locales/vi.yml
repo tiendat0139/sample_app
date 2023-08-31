@@ -95,6 +95,17 @@ vi:
       fail: "Xóa người dùng không thành công"
     show:
       microposts: "Bài đăng"
+    following:
+      title: "Đang theo dõi"
+    followers:
+      title: "Người theo dõi"
+    follow:
+      submit: "Theo dõi"
+    unfollow:
+      submit: "Hủy theo dõi"
+    show_follow:
+      view_profile: "Xem trang cá nhân"
+      microposts: "Bài đăng"
   shared:
     error_messages:
       contains_error: "Biểu mẫu gồm"
@@ -105,6 +116,9 @@ vi:
     micropost_form:
       placeholder: "Tạo bài viết mới"
       submit: "Đăng"
+    stats:
+      following: "đang theo dõi"
+      followers: "người theo dõi"
   sessions:
     new:
       login: "Đăng nhập"
@@ -161,3 +175,8 @@ vi:
       success: "Đã tạo bài viết"
     image:
       over_size: "Kích thước tệp tối đa là 5 MB. Vui lòng chọn tệp nhỏ hơn."
+  relationships:
+    create:
+      user_not_found: "Không tìm thấy người dùng"
+    destroy:
+      user_not_found: "Không tìm thấy người dùng"

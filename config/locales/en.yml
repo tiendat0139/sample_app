@@ -86,6 +86,17 @@ en:
       fail: "Delete fail"
     show:
       microposts: "Microposts"
+    following:
+      title: "Following"
+    followers:
+      title: "Follower"
+    follow:
+      submit: "Follow"
+    unfollow:
+      submit: "Unfollow"
+    show_follow:
+      view_profile: "View my profile"
+      microposts: "Microposts"
   shared:
     error_messages:
       contains_error: "The form contains"
@@ -96,6 +107,9 @@ en:
     micropost_form:
       placeholder: "Compose new micropost..."
       submit: "Submit"
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     new:
       login: "Login"
@@ -152,3 +166,8 @@ en:
       success: "Micropost created"
     image:
       over_size: "Maximum file size is 5MB. Please choose a smaller file."
+  relationships:
+    create:
+      user_not_found: "User not found"
+    destroy:
+      user_not_found: "User not found"
